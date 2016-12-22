@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ale5ak/url-shortener-microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ale5ak/url-shortener-microservice/issues"
+  },
+  "homepage": "https://github.com/ale5ak/url-shortener-microservice#readme"
+}
