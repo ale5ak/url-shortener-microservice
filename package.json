@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ale5ak/url-shortener-microservice/issues"
   },
-  "homepage": "https://github.com/ale5ak/url-shortener-microservice#readme"
+  "homepage": "https://github.com/ale5ak/url-shortener-microservice#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "mongodb": "^2.2.22"
+  }
 }
