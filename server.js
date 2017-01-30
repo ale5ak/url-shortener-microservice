@@ -51,6 +51,7 @@ app.get("/*", function (req, res) {
         var collection = db.collection('urlshortener')
         collection.findOne({"_id":id}, function(err, result) {
             console.log(result.site)
+            res.redirect(result.site)
         })
     })
 })
