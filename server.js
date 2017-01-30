@@ -27,14 +27,14 @@ app.get("/new/*", function(req, res) {
         console.log("Connected correctly to server");
 
         var collection = db.collection('urlshortener')
-        Promise.resolve(collection.update({"site":site}, {"site":site}, {upsert:true}, function(err, result) {}))
+        Promise.resolve(collection.updateOne({"site":site}, {"site":site}, {upsert:true}, function(err, result) {}))
             .then(collection.findOne({"site":site}, function(err, result) {
                 var odpoved = {
                     "original_url":site,
                     "short_url":"http://nodeweb.local/" + result._id
                 }
                 res.send(odpoved)
-                console.log(odpoved)
+                console.log(result)
             }))
         //collection.find().toArray(function(err, result) {console.log(result)} )
         db.close();
