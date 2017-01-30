@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ale5ak/url-shortener-microservice#readme",
   "dependencies": {
+    "bluebird": "^3.4.7",
     "express": "^4.14.1",
     "mongodb": "^2.2.22"
   }
