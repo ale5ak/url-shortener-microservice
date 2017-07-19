@@ -18,7 +18,6 @@ var regex = new RegExp(expression);
 app.get('/', function (req, res) {
   res.sendFile(__dirname + "/server.html")
   
-  
 })
 
 app.get("/new/*", function(req, res) {
@@ -45,8 +44,11 @@ app.get("/new/*", function(req, res) {
         });
     }
 
-
 })
+
+app.get('/favicon.ico', function(req, res) {
+    res.status(204);
+});
 
 app.get("/*", function (req, res) {
     var id = new mongo.ObjectID(req.params[0])
